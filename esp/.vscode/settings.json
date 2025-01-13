@@ -1,0 +1,15 @@
+{
+	"C_Cpp.intelliSenseEngine": "default",
+	"idf.adapterTargetName": "esp32c3",
+	"idf.openOcdConfigs": ["board/esp32c3-ftdi.cfg"],
+	"idf.port": "/dev/ttyUSB0",
+	"idf.flashType": "UART",
+	"files.associations": {
+		"storage.h": "c",
+		"hexdump.h": "c",
+		"cstdlib": "c",
+		"esp_types.h": "c",
+		"stdbool.h": "c",
+		"stddef.h": "c"
+	}
+}

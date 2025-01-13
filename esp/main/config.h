@@ -1,0 +1,4 @@
+#pragma once
+
+#define CONFIG_MAX_CARDS 512
+#define CONFIG_CRC_START_VALUE 46380
