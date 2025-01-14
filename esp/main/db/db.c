@@ -5,6 +5,7 @@
 #include "esp_log.h"
 
 #include "storage_wrapper.h"
+#include "led/led.h"
 
 #include "config.h"
 
@@ -175,6 +176,7 @@ esp_err_t dbBeginTransaction() {
         return ESP_ERR_INVALID_STATE;
 
     transaction = true;
+    ledSetDbTransaction(true);
 
     return ESP_OK;
 }
@@ -195,6 +197,7 @@ esp_err_t dbRollback() {
     }
 
     transaction = false;
+    ledSetDbTransaction(false);
 
     return ESP_OK;
 }
@@ -208,8 +211,10 @@ esp_err_t dbCommit() {
 
     esp_err_t err = storageSetBlob("card-db", db, count * sizeof(uint64_t));
 
-    if (err == ESP_OK)
+    if (err == ESP_OK) {
         transaction = false;
+        ledSetDbTransaction(false);
+    }
 
     return err;
 }

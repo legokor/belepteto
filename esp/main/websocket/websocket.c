@@ -20,6 +20,7 @@
 #include "db/db.h"
 #include "config.h"
 #include "helper.h"
+#include "led/led.h"
 
 static const char *TAG = "WEBSOCKET";
 
@@ -31,10 +32,12 @@ static void websocket_event_handler(void *handler_args, esp_event_base_t base, i
     switch (event_id) {
         case WEBSOCKET_EVENT_CONNECTED:
             ESP_LOGI(TAG, "WEBSOCKET_EVENT_CONNECTED");
+            ledSetWebsocketState(true);
             esp_websocket_client_send_text(client, "{\"type\": \"connected\"}", 21, portMAX_DELAY);
             break;
         case WEBSOCKET_EVENT_DISCONNECTED:
             ESP_LOGI(TAG, "WEBSOCKET_EVENT_DISCONNECTED");
+            ledSetWebsocketState(false);
             break;
         case WEBSOCKET_EVENT_DATA:
             if (data->op_code == 10)
