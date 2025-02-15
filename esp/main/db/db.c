@@ -19,25 +19,25 @@ static bool transaction = false;
 /*
  * Card id layout
  * | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
- * | CRC16 | 0 | <--- CARD ID ---> |
+ * | CRC16 | <----- CARD ID -----> |
  *
  * CRC16 of card id
  */
 
 static void genCRC(uint64_t *card) {
-    uint16_t crc = esp_crc16_be(CONFIG_CRC_START_VALUE, (uint8_t *)card, 5);
+    uint16_t crc = esp_crc16_be(CONFIG_CRC_START_VALUE, (uint8_t *)card, 6);
     ((uint16_t *)card)[3] = crc;
 }
 
 static bool checkCRC(uint64_t *card) {
-    uint16_t crc = esp_crc16_be(CONFIG_CRC_START_VALUE, (uint8_t *)card, 5);
+    uint16_t crc = esp_crc16_be(CONFIG_CRC_START_VALUE, (uint8_t *)card, 6);
     return ((uint16_t *)card)[3] == crc;
 }
 
 static void truncateId(uint64_t *card) {
-    if (0xffffffffff < *card) {
-        ESP_LOGW(TAG, "Card ID too large for 5 byte ID, truncating.");
-        *card &= 0xffffffffff;
+    if (0xffffffffffff < *card) {
+        ESP_LOGW(TAG, "Card ID too large for 6 byte ID, truncating.");
+        *card &= 0xffffffffffff;
     }
 }
 

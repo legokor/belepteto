@@ -27,6 +27,6 @@ direct_dependencies:
 - espressif/esp_websocket_client
 - espressif/led_strip
 - idf
-manifest_hash: 092905d40d7fe4bac574f02b66a6aa6579fc62338d869d1aa136950f488660e2
+manifest_hash: 0443b6bafd68112d12979152bf652c24696cf729c77e62c0779b3198c3fa18c2
 target: esp32c3
 version: 2.0.0

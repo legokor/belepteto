@@ -130,7 +130,7 @@ static void websockerProcessTask(void *arg) {
             } else if (strcmp(cmd, "ADD") == 0) {
                 uint64_t id;
                 uint8_t *uId = (uint8_t *)&id;
-                if (sscanf(arg, "%hhX:%hhX:%hhX:%hhX:%hhX", uId, uId + 1, uId + 2, uId + 3, uId + 4) == 5) {
+                if (sscanf(arg, SCANF_CARD_FORMAT_STRING, SCANF_CARD_ID_UINT_CONVERT(uId)) == SCANF_CARD_ID_LENGTH) {
                     ESP_LOGI(TAG, "ADD: adding card " CARD_ID_FORMAT_STRING, CARD_ID_CONVERT(id));
 
                     esp_err_t err = dbAdd(id);
@@ -160,7 +160,7 @@ static void websockerProcessTask(void *arg) {
             } else if (strcmp(cmd, "REMOVE") == 0) {
                 uint64_t id;
                 uint8_t *uId = (uint8_t *)&id;
-                if (sscanf(arg, "%hhX:%hhX:%hhX:%hhX:%hhX", uId, uId + 1, uId + 2, uId + 3, uId + 4) == 5) {
+                if (sscanf(arg, SCANF_CARD_FORMAT_STRING, SCANF_CARD_ID_UINT_CONVERT(uId)) == SCANF_CARD_ID_LENGTH) {
                     ESP_LOGI(TAG, "REMOVE: removing card " CARD_ID_FORMAT_STRING, CARD_ID_CONVERT(id));
 
                     esp_err_t err = dbRemove(id);

@@ -5,6 +5,7 @@
 #include "driver/gpio.h"
 
 #include "rc522.h"
+#include "driver/rc522_spi.h"
 
 #include "db/db.h"
 #include "wifi/wifi.h"
@@ -20,26 +21,33 @@
 
 static const char *TAG = "lego-door-control";
 static rc522_handle_t scanner;
+static rc522_driver_handle_t driver;
 
 static QueueHandle_t cardIdQueue = NULL;
 static EventGroupHandle_t openDoor = NULL;
 
-static void rc522_handler(void *arg, esp_event_base_t base, int32_t event_id, void *event_data) {
-    rc522_event_data_t *data = (rc522_event_data_t *)event_data;
+static uint64_t picc2uint64(rc522_picc_uid_t uid, uint8_t bytes) {
+    uint64_t out = 0;
+    for (uint8_t i = 0; i < MIN(uid.length, bytes); ++i)
+        out ^= ((uint64_t)(uid.value[i])) << (i * 8);
 
-    switch (event_id) {
-        case RC522_EVENT_TAG_SCANNED:
-            rc522_tag_t *tag = (rc522_tag_t *)data->ptr;
-            if (0xffffffffff < tag->serial_number) {
-                ESP_LOGE(TAG, "Invalid serial number");
-                return;
-            }
-            if (xQueueSendToBack(cardIdQueue, &(tag->serial_number), 0) != pdTRUE) {
-                ESP_LOGE(TAG, "Failed to enqueue serial number.");
-            }
-            break;
-        default:
-            break;
+    return out;
+}
+
+static void rc522_handler(void *arg, esp_event_base_t base, int32_t event_id, void *event_data) {
+    rc522_picc_state_changed_event_t *event = (rc522_picc_state_changed_event_t *)event_data;
+    rc522_picc_t *picc = event->picc;
+
+    if (picc->state == RC522_PICC_STATE_ACTIVE) {
+        ESP_LOGI(TAG, "Serial length: %hhu", picc->uid.length);
+        uint64_t id = picc2uint64(picc->uid, 6);
+        if (0xffffffffffff < id) {
+            ESP_LOGE(TAG, "Invalid serial number");
+            return;
+        }
+        if (xQueueSendToBack(cardIdQueue, &id, 0) != pdTRUE) {
+            ESP_LOGE(TAG, "Failed to enqueue serial number.");
+        }
     }
 }
 
@@ -73,12 +81,17 @@ static void doorControlTask(void *arg) {
 }
 
 void app_main() {
-    rc522_config_t config = {
-        .spi.host = SPI2_HOST,
-        .spi.miso_gpio = 2,
-        .spi.mosi_gpio = 7,
-        .spi.sck_gpio = 6,
-        .spi.sda_gpio = 10,
+    rc522_spi_config_t driver_config = {
+        .host_id = SPI2_HOST,
+        .bus_config = &(spi_bus_config_t) {
+            .miso_io_num = 2,
+            .mosi_io_num = 7,
+            .sclk_io_num = 6,
+        },
+        .dev_config = {
+            .spics_io_num = 10,
+        },
+        .rst_io_num = -1,
     };
 
     cardIdQueue = xQueueCreate(16, sizeof(uint64_t));
@@ -103,12 +116,22 @@ void app_main() {
 
     dbInit();
 
-    rc522_create(&config, &scanner);
-    rc522_register_events(scanner, RC522_EVENT_ANY, rc522_handler, NULL);
+    // esp_log_level_set("rc522", ESP_LOG_DEBUG);
+
+    rc522_spi_create(&driver_config, &driver);
+    rc522_driver_install(driver);
+
+    rc522_config_t scanner_config = {
+        .driver = driver,
+    };
+
+    rc522_create(&scanner_config, &scanner);
+    rc522_register_events(scanner, RC522_EVENT_PICC_STATE_CHANGED, rc522_handler, NULL);
     rc522_start(scanner);
 
     xTaskCreate(doorControlTask, "door-control", 2048, NULL, 7, NULL);
 
+    esp_log_level_set("wifi", ESP_LOG_WARN);
     wifiInit();
 
     websocketInit();
