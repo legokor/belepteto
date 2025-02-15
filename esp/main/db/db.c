@@ -222,3 +222,7 @@ esp_err_t dbCommit() {
 const uint64_t *dbGet() {
     return db;
 }
+
+size_t dbGetSize() {
+    return count;
+}

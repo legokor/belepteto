@@ -20,3 +20,5 @@ esp_err_t dbCommit();
 esp_err_t dbRollback();
 
 const uint64_t *dbGet();
+
+size_t dbGetSize();

@@ -1,2 +1,14 @@
-idf_component_register(SRCS "console.c" "main.c" "db/db.c" "db/console.c" "wifi/wifi.c" "wifi/console.c" "websocket/websocket.c" "websocket/console.c" "led/led.c"
-                    INCLUDE_DIRS ".")
+idf_component_register(SRCS
+    "console.c"
+    "main.c"
+    "db/db.c"
+    "db/console.c"
+    "wifi/wifi.c"
+    "wifi/console.c"
+    "websocket/websocket.c"
+    "websocket/console.c"
+    "led/led.c"
+    "status/status.c"
+    "status/console.c"
+    INCLUDE_DIRS
+    ".")

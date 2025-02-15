@@ -91,9 +91,17 @@ void ledSetWiFiState(bool state) {
     updateColor();
 }
 
+bool ledGetWifiState() {
+    return wifiConnected;
+}
+
 void ledSetWebsocketState(bool state) {
     websocketConnected = state;
     updateColor();
+}
+
+bool ledGetWebsocketState() {
+    return websocketConnected;
 }
 
 void ledSetDoorAllowedState(bool state) {

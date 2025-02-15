@@ -13,6 +13,7 @@
 #include "console.h"
 #include "helper.h"
 #include "led/led.h"
+#include "status/status.h"
 
 #include "config.h"
 
@@ -111,6 +112,8 @@ void app_main() {
     }
 
     ledInit();
+
+    statusInit();
 
     consoleInit();
 

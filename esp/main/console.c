@@ -1,13 +1,14 @@
 #include "esp_console.h"
+#include "storage_wrapper.h"
+#include "freertos/FreeRTOS.h"
+#include "freertos/timers.h"
+#include "esp_system.h"
 
 #include "console.h"
 #include "websocket/console.h"
 #include "wifi/console.h"
 #include "db/console.h"
-#include "storage_wrapper.h"
-#include "freertos/FreeRTOS.h"
-#include "freertos/timers.h"
-#include "esp_system.h"
+#include "status/console.h"
 
 static int doReboot(int argc, char **argv) {
     printf("Rebooting in 5 seconds\n");
@@ -38,6 +39,7 @@ void consoleInit() {
     dbRegisterCommands();
     websocketRegisterCommands();
     wifiRegisterCommands();
+    statusRegisterCommands();
 
 #if defined(CONFIG_ESP_CONSOLE_UART_DEFAULT) || defined(CONFIG_ESP_CONSOLE_UART_CUSTOM)
     esp_console_dev_uart_config_t hw_config = ESP_CONSOLE_DEV_UART_CONFIG_DEFAULT();

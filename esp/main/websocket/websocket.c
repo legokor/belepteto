@@ -21,6 +21,7 @@
 #include "config.h"
 #include "helper.h"
 #include "led/led.h"
+#include "status/status.h"
 
 static const char *TAG = "WEBSOCKET";
 
@@ -276,6 +277,8 @@ static void websockerProcessTask(void *arg) {
                 websocketSendText(buf);
                 free(smolbuf);
                 free(buf);
+            } else if (strcmp(cmd, "STATUS") == 0) {
+                statusSend(websocketSendText);
             } else {
                 websocketSendText("{\"type\": \"error\", \"message\": \"unknown command\"}");
             }
