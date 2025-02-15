@@ -1,6 +1,13 @@
 #pragma once
 
+#define CONFIG_RC522_MISO 2
+#define CONFIG_RC522_MOSI 3
+#define CONFIG_RC522_SCLK 4
+#define CONFIG_RC522_CS 5
+#define CONFIG_RC522_RST -1
+
 #define CONFIG_MAX_CARDS 512
+// Random 16 bit value for CRC calculation
 #define CONFIG_CRC_START_VALUE 46380
 
 #define CONFIG_DOOR_OPEN_TIME_MS 2000

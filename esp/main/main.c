@@ -85,14 +85,14 @@ void app_main() {
     rc522_spi_config_t driver_config = {
         .host_id = SPI2_HOST,
         .bus_config = &(spi_bus_config_t) {
-            .miso_io_num = 2,
-            .mosi_io_num = 7,
-            .sclk_io_num = 6,
+            .miso_io_num = CONFIG_RC522_MISO,
+            .mosi_io_num = CONFIG_RC522_MOSI,
+            .sclk_io_num = CONFIG_RC522_SCLK,
         },
         .dev_config = {
-            .spics_io_num = 10,
+            .spics_io_num = CONFIG_RC522_CS,
         },
-        .rst_io_num = -1,
+        .rst_io_num = CONFIG_RC522_RST,
     };
 
     cardIdQueue = xQueueCreate(16, sizeof(uint64_t));
