@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "belepteto")(type "KiCad")(uri "${KIPRJMOD}/../belepteto.kicad_sym")(options "")(descr ""))
+)

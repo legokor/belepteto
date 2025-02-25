@@ -1,0 +1,224 @@
+(footprint "RFID_PCB_ant"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "d4ebd550-88cc-4a7e-bd0e-240181f7acd4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "RFID_PCB_ant"
+		(at 0 1.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b79a571f-cdb7-44db-bc41-e1fd06f146b8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9df9451c-13c0-444b-8ae4-04930a0ce532")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d4f28eab-75e0-4a83-a9dc-7327dafe4525")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cf369a33-2602-41f1-b7b8-313f9fbdc51e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(zone_connect 2)
+	(attr smd exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+	(net_tie_pad_groups "0, 1, 2")
+	(fp_line
+		(start 17.9 0)
+		(end 16.1 0)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(layer "F.Cu")
+		(uuid "15a5fb24-0ece-4e64-bceb-301c1f1c8881")
+	)
+	(fp_line
+		(start 22.7 -1.8)
+		(end 24.2 -1.8)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(layer "F.Cu")
+		(uuid "b0f95802-8320-4968-abb2-7dba7d9c7096")
+	)
+	(fp_line
+		(start 22.7 0)
+		(end 22.7 -1.8)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(layer "F.Cu")
+		(uuid "47fc6e67-de86-4616-bf8e-088565a830ec")
+	)
+	(fp_arc
+		(start -21.5 0)
+		(mid 0 -21.5)
+		(end 21.5 0)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(layer "F.Cu")
+		(uuid "66da82ee-aecc-43b3-9d6c-893252508410")
+	)
+	(fp_arc
+		(start -20.3 0)
+		(mid 0 -20.3)
+		(end 20.3 0)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(layer "F.Cu")
+		(uuid "86849260-5e22-4576-a66b-91ac621d19e6")
+	)
+	(fp_arc
+		(start -19.1 0)
+		(mid 0 -19.1)
+		(end 19.1 0)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(layer "F.Cu")
+		(uuid "d119e768-ad60-4d5b-aa24-891d7cd2b6ed")
+	)
+	(fp_arc
+		(start -17.9 0)
+		(mid 0 -17.9)
+		(end 17.9 0)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(layer "F.Cu")
+		(uuid "8516cc75-b38c-4a10-a673-486113d1054d")
+	)
+	(fp_arc
+		(start 19.1 0)
+		(mid 0.6 18.5)
+		(end -17.9 0)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(layer "F.Cu")
+		(uuid "fe5286e6-7f3e-44ef-9bf2-0f4908961979")
+	)
+	(fp_arc
+		(start 20.3 0)
+		(mid 0.6 19.7)
+		(end -19.1 0)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(layer "F.Cu")
+		(uuid "ce2c6a22-eda8-46ba-89d1-074fbdb0b4b7")
+	)
+	(fp_arc
+		(start 21.5 0)
+		(mid 0.6 20.9)
+		(end -20.3 0)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(layer "F.Cu")
+		(uuid "3df3806f-dc7a-4f6f-82b9-ce1b11f78a17")
+	)
+	(fp_arc
+		(start 22.7 0)
+		(mid 0.6 22.1)
+		(end -21.5 0)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(layer "F.Cu")
+		(uuid "e4e6f97d-235b-4d3c-a0f2-b5c801906664")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "acadd289-1c98-40cf-9744-2cb9bddc6e68")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 24.7 -1.8)
+		(size 3 1)
+		(layers "F.Cu")
+		(roundrect_rratio 0.25)
+		(uuid "1f9dcb4c-b82d-4741-9a45-d9a03153822d")
+	)
+	(pad "2" thru_hole circle
+		(at 16.1 0)
+		(size 0.6 0.6)
+		(drill 0.3)
+		(layers "*.Cu")
+		(remove_unused_layers yes)
+		(keep_end_layers yes)
+		(uuid "fda35fc3-524d-4ea4-9ad1-b7a038f5b58a")
+	)
+	(pad "3" thru_hole circle
+		(at 20.2 -2.1)
+		(size 0.6 0.6)
+		(drill 0.3)
+		(layers "*.Cu")
+		(remove_unused_layers yes)
+		(keep_end_layers yes)
+		(uuid "14ebb772-8825-4aa9-8cbc-7e3fe67337af")
+	)
+)
