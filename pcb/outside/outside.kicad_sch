@@ -16126,7 +16126,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Speaker_Crystal"
+		(property "Value" "PS1240P02BT"
 			(at 139.7 118.1099 0)
 			(effects
 				(font
@@ -16144,7 +16144,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/sw_piezo/sw_piezo/piezo-buzzer/catalog/piezoelectronic_buzzer_ps_en.pdf"
 			(at 133.731 116.84 0)
 			(effects
 				(font
