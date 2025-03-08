@@ -1739,7 +1739,7 @@
 			(roundrect_rratio 0.25)
 			(net 1 "GND")
 			(pinfunction "GND")
-			(pintype "power_out")
+			(pintype "passive")
 			(uuid "0e7c0db7-3c8f-46fa-9b09-49a868a92a01")
 		)
 		(pad "A4" smd roundrect
@@ -1749,7 +1749,7 @@
 			(roundrect_rratio 0.25)
 			(net 29 "Net-(F1-Pad1)")
 			(pinfunction "VBUS")
-			(pintype "power_out")
+			(pintype "passive")
 			(uuid "c2df1c73-39a4-41e4-b6cf-955a7bf035b2")
 		)
 		(pad "A5" smd roundrect
@@ -2479,7 +2479,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 46 "/USB-")
+			(net 51 "/USB+")
 			(pinfunction "I/O2")
 			(pintype "passive")
 			(uuid "6024af6c-1482-42ee-b77f-06a3ca15be39")
@@ -2499,7 +2499,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 51 "/USB+")
+			(net 46 "/USB-")
 			(pinfunction "I/O1")
 			(pintype "passive")
 			(uuid "2d9bed6b-e702-4381-b290-6c60eee6127a")
@@ -9061,7 +9061,7 @@
 			(net 1 "GND")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "5fa56aee-bbb2-471e-84bd-e1c1688b6d17")
+			(uuid "eef7c853-3c7d-479d-b698-80cef4270be9")
 		)
 		(pad "2" smd rect
 			(at -3.15 1.9)
@@ -9079,7 +9079,7 @@
 			(net 4 "/RST")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "bc26f982-b667-4cff-8746-794d35912111")
+			(uuid "d2914827-23f3-4b06-9c52-8096558023ff")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_TL3342.wrl"
@@ -10233,7 +10233,7 @@
 			(net 1 "GND")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "7d6a8b6b-cc1b-4751-b4d6-821e2f010882")
+			(uuid "afd156ac-58f2-41f5-86b3-1ac459bfa720")
 		)
 		(pad "2" smd rect
 			(at -3.15 1.9)
@@ -10251,7 +10251,7 @@
 			(net 33 "/ESP/PRG")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "ec72b412-1434-415e-a575-9e12a023a8e8")
+			(uuid "2bba37a9-c797-4323-a2f8-04f2ee5cbd7d")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_TL3342.wrl"

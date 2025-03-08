@@ -4258,7 +4258,7 @@
 		)
 		(uuid "c1e96f36-a5cb-406c-9baa-3f0e130c7cb9")
 	)
-	(label "USB-"
+	(label "USB+"
 		(at 85.09 156.21 180)
 		(effects
 			(font
@@ -4288,7 +4288,7 @@
 		)
 		(uuid "e39d59a0-bcc0-4d98-b988-b8d321556b26")
 	)
-	(label "USB+"
+	(label "USB-"
 		(at 85.09 153.67 180)
 		(effects
 			(font
