@@ -1,7 +1,7 @@
 (footprint "RFID_PCB_ant"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 0 0)
@@ -23,18 +23,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "9df9451c-13c0-444b-8ae4-04930a0ce532")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -66,26 +54,6 @@
 	(zone_connect 2)
 	(attr smd exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 	(net_tie_pad_groups "0, 1, 2")
-	(fp_line
-		(start 17.9 0)
-		(end 16.1 0)
-		(stroke
-			(width 1)
-			(type default)
-		)
-		(layer "F.Cu")
-		(uuid "15a5fb24-0ece-4e64-bceb-301c1f1c8881")
-	)
-	(fp_line
-		(start 22.7 -1.8)
-		(end 24.2 -1.8)
-		(stroke
-			(width 1)
-			(type default)
-		)
-		(layer "F.Cu")
-		(uuid "b0f95802-8320-4968-abb2-7dba7d9c7096")
-	)
 	(fp_line
 		(start 22.7 0)
 		(end 22.7 -1.8)
@@ -196,15 +164,14 @@
 			)
 		)
 	)
-	(pad "1" smd roundrect
-		(at 24.7 -1.8)
-		(size 3 1)
+	(pad "1" smd circle
+		(at 22.7 -1.8)
+		(size 1 1)
 		(layers "F.Cu")
-		(roundrect_rratio 0.25)
 		(uuid "1f9dcb4c-b82d-4741-9a45-d9a03153822d")
 	)
 	(pad "2" thru_hole circle
-		(at 16.1 0)
+		(at 17.91 -0.01)
 		(size 0.6 0.6)
 		(drill 0.3)
 		(layers "*.Cu")
@@ -221,4 +188,5 @@
 		(keep_end_layers yes)
 		(uuid "14ebb772-8825-4aa9-8cbc-7e3fe67337af")
 	)
+	(embedded_fonts no)
 )
