@@ -8505,11 +8505,11 @@
 		(at 39.37 130.81 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "0220dd3e-8712-4b95-8a42-035e538c36c3")
-		(property "Reference" "TP16"
+		(property "Reference" "TP14"
 			(at 43.942 130.81 90)
 			(effects
 				(font
@@ -8560,7 +8560,7 @@
 		(instances
 			(project "outside"
 				(path "/c5e20960-8abc-4599-8934-513e1dfcba6a"
-					(reference "TP16")
+					(reference "TP14")
 					(unit 1)
 				)
 			)
@@ -8571,7 +8571,7 @@
 		(at 39.37 125.73 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "03fd386d-e607-4a5e-a6e2-b21bfaad46c3")
@@ -8702,7 +8702,7 @@
 		(at 148.59 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "070848e4-9608-4e0d-855a-3198fefc65d7")
@@ -9692,7 +9692,7 @@
 		(at 194.31 49.53 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "3624c53e-029f-4c55-a860-c1bb02ff752f")
@@ -10309,7 +10309,7 @@
 		(at 64.77 157.48 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "4b29e20a-0a38-4950-bebf-fb1668973441")
@@ -10845,7 +10845,7 @@
 		(at 50.8 86.36 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "6235c18b-e855-43d3-b90a-7fea9a9aab07")
@@ -11637,7 +11637,7 @@
 		(at 119.38 170.18 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -11770,7 +11770,7 @@
 		(at 64.77 154.94 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "86220b7c-de95-4876-824f-e6018152a3ec")
@@ -12471,7 +12471,7 @@
 		(at 129.54 77.47 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "9abd5025-b8af-4e99-adc3-56df28dd3c49")
@@ -12603,7 +12603,7 @@
 		(at 128.27 182.88 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "a06c59fd-67a9-4f64-ba66-e11f6830d3f2")
@@ -12669,11 +12669,11 @@
 		(at 121.92 129.54 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "a132aaf0-b0f7-4656-8bbd-1b24632bb02a")
-		(property "Reference" "TP14"
+		(property "Reference" "TP16"
 			(at 121.158 133.604 0)
 			(effects
 				(font
@@ -12724,7 +12724,7 @@
 		(instances
 			(project "outside"
 				(path "/c5e20960-8abc-4599-8934-513e1dfcba6a"
-					(reference "TP14")
+					(reference "TP16")
 					(unit 1)
 				)
 			)
@@ -12954,7 +12954,7 @@
 		(at 152.4 170.18 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "b18da2fd-c16d-4973-ba46-9f8e23175e67")
@@ -13154,7 +13154,7 @@
 		(at 259.08 82.55 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "b46cd953-f6a6-4c66-b144-5f9f324c229b")
@@ -13220,7 +13220,7 @@
 		(at 50.8 88.9 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "b607affc-5eef-4ddf-8455-d4ca23f884c1")
@@ -13631,7 +13631,7 @@
 		(at 39.37 128.27 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "c5eeaaeb-5ac6-4bbe-b828-61d0d170b653")
@@ -13958,11 +13958,11 @@
 		(at 39.37 133.35 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "cba93296-e46c-4968-b044-afbb86a53164")
-		(property "Reference" "TP17"
+		(property "Reference" "TP15"
 			(at 43.942 133.35 90)
 			(effects
 				(font
@@ -14013,7 +14013,7 @@
 		(instances
 			(project "outside"
 				(path "/c5e20960-8abc-4599-8934-513e1dfcba6a"
-					(reference "TP17")
+					(reference "TP15")
 					(unit 1)
 				)
 			)
@@ -14558,11 +14558,11 @@
 		(at 262.89 129.54 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "dcf12e73-fbf3-4404-a829-8f30b1c96579")
-		(property "Reference" "TP15"
+		(property "Reference" "TP17"
 			(at 268.732 132.842 0)
 			(effects
 				(font
@@ -14613,7 +14613,7 @@
 		(instances
 			(project "outside"
 				(path "/c5e20960-8abc-4599-8934-513e1dfcba6a"
-					(reference "TP15")
+					(reference "TP17")
 					(unit 1)
 				)
 			)
@@ -14624,7 +14624,7 @@
 		(at 259.08 77.47 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "de8073f5-dea1-4b37-bb23-cc1660c530be")
@@ -14821,7 +14821,7 @@
 		(at 259.08 80.01 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "dfe2dbe5-3a25-4dfb-a59c-85786473ad02")
@@ -14887,7 +14887,7 @@
 		(at 259.08 85.09 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "e1fb02ca-d3cd-44e5-b2c2-851d8b39809d")
@@ -15018,7 +15018,7 @@
 		(at 218.44 40.64 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "e2d98797-5cc1-45b5-a0d5-5e1636bfbbcf")
@@ -15567,7 +15567,7 @@
 		(at 194.31 52.07 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "f81fc3f7-a60b-467c-8c43-750f97ccb8b7")
