@@ -3859,7 +3859,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 36311fad-c8de-4212-9efa-de23fbc1a396)
+			(uuid 0377bbf9-f4a0-4c2f-acd5-b363af7fb8ae)
 		)
 	)
 	(netclass_flag ""
@@ -4586,7 +4586,7 @@
 		(dnp no)
 		(uuid "41f70bc7-694d-4be8-b7b0-a0d2278c4b2d")
 		(property "Reference" "R13"
-			(at 183.3879 98.044 90)
+			(at 184.658 98.044 90)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 0.7,
+          "width": 0.7
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -48,11 +48,170 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.25
         }
       },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
+      "drc_exclusions": [
+        [
+          "clearance|126652181|68736675|001b098c-1c3b-4f62-99c9-aefd5ae8d83a|c05c40c8-b089-412c-b5b4-513eef22403e",
+          "Antenna"
+        ],
+        [
+          "footprint|125050000|48500000|52520d91-544b-43b9-82cc-8b3d39b17572|00000000-0000-0000-0000-000000000000",
+          "Antenna"
+        ],
+        [
+          "hole_clearance|107745000|68700000|0e7c0db7-3c8f-46fa-9b09-49a868a92a01|8f979097-237e-4475-93e5-0cb7e1701959",
+          "USB-C footprint"
+        ],
+        [
+          "hole_clearance|107745000|68700000|aac2cdfc-6260-41f2-a4cf-36413e572042|8f979097-237e-4475-93e5-0cb7e1701959",
+          "USB-C footprint"
+        ],
+        [
+          "hole_clearance|107745000|74800000|48e9a34d-426a-4ddb-8fae-e520225da6e7|1bc97364-c2a7-46b2-9507-7a48fdbe7eba",
+          "USB-C footprint"
+        ],
+        [
+          "hole_clearance|107745000|74800000|631e9485-6ed5-4a1d-9375-b9cc57b746a0|1bc97364-c2a7-46b2-9507-7a48fdbe7eba",
+          "USB-C footprint"
+        ],
+        [
+          "lib_footprint_mismatch|101275000|84650000|de572992-fdf2-4975-922c-9d3a3e58e1da|00000000-0000-0000-0000-000000000000",
+          "Spoke angle"
+        ],
+        [
+          "shorting_items|126851483|68719907|8390fc23-8c75-4c9f-a601-b115bafdbab0|c05c40c8-b089-412c-b5b4-513eef22403e",
+          "Antenna"
+        ],
+        [
+          "shorting_items|127039081|70410401|7789e663-e1e5-45c1-9f42-1dcb0e788b0b|001b098c-1c3b-4f62-99c9-aefd5ae8d83a",
+          "Antenna"
+        ],
+        [
+          "silk_overlap|102400000|33235000|0560929e-3e81-413a-aa8e-4e4d6fad19d0|07dc3750-c7ac-4298-848b-15ee8bbddb7b",
+          "LED footprint"
+        ],
+        [
+          "silk_overlap|102400000|59735000|0c8703de-8d3b-4b75-9094-fb8fd8ca470a|7062a091-85be-447c-9d2f-82a917b8c5ab",
+          "LED footprint"
+        ],
+        [
+          "silk_overlap|104250000|60050000|09ab7a35-d7b2-4a38-bd5c-69b744a62513|b1e57d5a-74ba-4c20-b1a0-5c69a658f6fe",
+          "TestPoint footprint"
+        ],
+        [
+          "silk_overlap|109500000|74800000|3ce47d6b-96ed-4de6-825b-5396d93bff75|86c571d1-9dd3-4170-9902-39593f3257a6",
+          "TestPoint footprint"
+        ],
+        [
+          "silk_overlap|110515000|27400000|ca90cd66-15d7-4605-985a-27dc3e74e65a|c8175539-96b8-43b4-9169-f49a5d65d202",
+          "LED footprint"
+        ],
+        [
+          "silk_overlap|111500000|74800000|a202f3f9-76d3-4501-b419-c126bc39fd76|768b2b77-0d23-4fad-bdc2-7ba858ff4e1c",
+          "TestPoint footprint"
+        ],
+        [
+          "silk_overlap|114250000|97800000|b488223c-103b-4682-86c0-c064b4de3582|21ae50c0-6e60-432e-ac46-9b52cbd79e28",
+          "TestPoint footprint"
+        ],
+        [
+          "silk_overlap|116000000|78300000|f54f1360-9aa5-4004-8e79-9dede15e87ea|31d9cb52-215f-4d24-b246-980e53bb34ee",
+          "TestPoint footprint"
+        ],
+        [
+          "silk_overlap|117500000|84550000|dd341e2f-5aaa-4c3c-a5f6-02eefb294a5b|0e261fe8-58ab-45a9-a8c3-4b7b1fbee9db",
+          "TestPoint footprint"
+        ],
+        [
+          "silk_overlap|118500000|86550000|fe095b9e-f7e3-44a4-b8b8-72c326d8817b|73555824-ef02-4f14-bd8b-16b8338aa2ba",
+          "TestPoint footprint"
+        ],
+        [
+          "silk_overlap|127750000|85800000|3cfb7a01-df2f-438f-ab79-3aab64c78007|4896e47f-2d34-4cea-97e0-8ef99d894f3d",
+          "TestPoint footprint"
+        ],
+        [
+          "silk_overlap|130250000|94550000|3a9ff73d-22eb-4c9b-9c39-5d175bbc8bd5|75ae202d-ca2a-490c-b435-ee7b73140c32",
+          "TestPoint footprint"
+        ],
+        [
+          "silk_overlap|131750000|90050000|a188695b-9258-475d-b396-d8e432b0488e|8b523502-789c-4d88-adff-6b0d3c02590c",
+          "TestPoint footprint"
+        ],
+        [
+          "silk_overlap|132250000|94050000|3387fe6c-feb3-44c2-96f9-c880f3c89aaf|c211b1dc-91ad-43c0-9e99-415c6a72832f",
+          "TestPoint footprint"
+        ],
+        [
+          "silk_overlap|134250000|91926434|27ef236f-af26-4aea-82f2-7f7c8ddb5307|b7dbda9f-a453-4815-b97d-de7f14a6b702",
+          "TestPoint footprint"
+        ],
+        [
+          "silk_overlap|134250000|94050000|270bb60a-22ed-4c01-9208-c62e63554ec1|6b1a1760-3a7f-4dd1-b48a-33ae693430b5",
+          "TestPoint footprint"
+        ],
+        [
+          "silk_overlap|134500000|88800000|48d2ead4-e454-4c2e-a696-06b4fbf62328|4c00a7d8-5785-434a-a361-4570bf2339d8",
+          "TestPoint footprint"
+        ],
+        [
+          "silk_overlap|134750000|79050000|e0948361-33d9-40d3-b6a9-38c45f83636d|a1178004-7ed6-48c3-a260-fbd72dce9e9e",
+          "TestPoint footprint"
+        ],
+        [
+          "silk_overlap|135250000|83300000|32b261e0-cdef-4557-8a0a-4e3b40bec7eb|550c20b2-cf7a-4fb6-a23c-e59293da7e08",
+          "TestPoint footprint"
+        ],
+        [
+          "silk_overlap|137500000|84800000|cf38c6b5-ffb6-4b40-b78e-35506bf93286|17b1840c-2d2f-499f-8eab-7f5415b16a31",
+          "TestPoint footprint"
+        ],
+        [
+          "silk_overlap|137750000|82050000|f1f76879-590b-46bd-a506-88947d6eb14f|6521abee-9c9a-4b4d-850b-f197e6c70c02",
+          "TestPoint footprint"
+        ],
+        [
+          "silk_overlap|140000000|83300000|1fb51851-630d-4a78-925c-b7cce366a6fb|666adeda-fb0b-4959-95aa-fbf368ae9eb6",
+          "TestPoint footprint"
+        ],
+        [
+          "silk_overlap|141765000|27400000|3bcd1f1a-8436-47c2-aeeb-20415d35a916|871a7f47-b295-48c6-9ec7-b6c007bf6f37",
+          "LED footprint"
+        ],
+        [
+          "silk_overlap|142250000|83050000|4b2d19b7-3586-4208-86fe-386a10ded21d|01d6fbb1-6317-4994-adf8-b884d387386c",
+          "TestPoint footprint"
+        ],
+        [
+          "silk_overlap|144000000|93800000|219a90a6-cfbc-4385-8683-119277e7fd73|0f803934-76c7-4f10-a835-93a64cdb7dd1",
+          "TestPoint footprint"
+        ],
+        [
+          "silk_overlap|144000000|97800000|1e4eeccd-c460-4933-8db5-0098bd5627f3|52d47ba3-c215-47c0-965f-3b5d684d8347",
+          "TestPoint footprint"
+        ],
+        [
+          "silk_overlap|147600000|35765000|9fca9d8b-8574-4511-b2ab-c783007447f7|2d349faf-536c-4200-aaea-817602793a5f",
+          "LED footprint"
+        ],
+        [
+          "silk_overlap|147600000|62265000|e711c68f-1e19-4d50-8301-3bde9bdc3162|1cf3b2f7-a898-4d41-945a-a768c6dcdbc1",
+          "LED footprint"
+        ],
+        [
+          "solder_mask_bridge|126652181|68736675|c05c40c8-b089-412c-b5b4-513eef22403e|001b098c-1c3b-4f62-99c9-aefd5ae8d83a",
+          "Antenna"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -117,22 +276,22 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_connection": 0.0,
+        "min_clearance": 0.1,
+        "min_connection": 0.1,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
+        "min_hole_to_hole": 0.45,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.8,
-        "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_text_height": 1.0,
+        "min_text_thickness": 0.15,
+        "min_through_hole_diameter": 0.15,
+        "min_track_width": 0.1,
+        "min_via_annular_width": 0.05,
+        "min_via_diameter": 0.15,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -180,7 +339,14 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.25,
+        0.3,
+        0.5,
+        0.8,
+        1.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -207,7 +373,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -469,18 +640,22 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.3,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
       },
       {
         "bus_width": 12,
+        "clearance": 0.2,
         "line_style": 0,
         "name": "RF",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 6
       }
     ],
@@ -517,6 +692,21 @@
         "RF"
       ],
       "Net-(C21-Pad1)": [
+        "RF"
+      ],
+      "Net-(C25-Pad1)": [
+        "RF"
+      ],
+      "Net-(C25-Pad2)": [
+        "RF"
+      ],
+      "Net-(C27-Pad1)": [
+        "RF"
+      ],
+      "Net-(C31-Pad2)": [
+        "RF"
+      ],
+      "Net-(C32-Pad2)": [
         "RF"
       ]
     },
@@ -575,7 +765,7 @@
           "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -648,6 +838,12 @@
           "label": "Description",
           "name": "Description",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Field5Manufacturer_Part_Number",
+          "name": "Field5Manufacturer_Part_Number",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -701,10 +897,6 @@
     [
       "c5e20960-8abc-4599-8934-513e1dfcba6a",
       "Root"
-    ],
-    [
-      "fb6d3d1a-c482-4206-895c-26fba896d582",
-      "ESP"
     ],
     [
       "d0b52ea1-638f-4ebc-b472-7f19f0cbb55e",
