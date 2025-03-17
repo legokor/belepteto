@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "V100-EY9-05")(type "KiCad")(uri "${KIPRJMOD}/V100-EY9-05.pretty")(options "")(descr ""))
+)
