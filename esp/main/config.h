@@ -1,10 +1,7 @@
 #pragma once
 
-#define CONFIG_RC522_MISO 2
-#define CONFIG_RC522_MOSI 3
-#define CONFIG_RC522_SCLK 4
-#define CONFIG_RC522_CS 5
-#define CONFIG_RC522_RST -1
+#define CONFIG_PN532_RX 5
+#define CONFIG_PN532_TX 9
 
 #define CONFIG_MAX_CARDS 512
 // Random 16 bit value for CRC calculation
@@ -16,4 +13,10 @@
 
 #define CONFIG_LED_STRIP_PIN 8
 #define CONFIG_LED_STRIP_LENGTH 1
-#define CONFIG_LED_STRIP_BRIGHTNESS 2
+#define CONFIG_LED_STRIP_BRIGHTNESS 6
+
+#define CONFIG_W5500_SCLK 6
+#define CONFIG_W5500_MISO 2
+#define CONFIG_W5500_MOSI 7
+#define CONFIG_W5500_SS 3
+#define CONFIG_W5500_INT 4

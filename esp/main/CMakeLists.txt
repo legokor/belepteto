@@ -10,5 +10,6 @@ idf_component_register(SRCS
     "led/led.c"
     "status/status.c"
     "status/console.c"
+    "ethernet/ethernet.c"
     INCLUDE_DIRS
     ".")

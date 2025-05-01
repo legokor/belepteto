@@ -1,6 +1,6 @@
-[submodule "esp/components/rc522"]
-	path = esp/components/rc522
-	url = https://github.com/kisbogdan-kolos/esp-idf-rc522.git
 [submodule "esp/components/storage"]
 	path = esp/components/storage
 	url = https://github.com/kisbogdan-kolos/esp-storage.git
+[submodule "esp/components/pn532"]
+	path = esp/components/pn532
+	url = https://github.com/revk/ESP32-PN532/

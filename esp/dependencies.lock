@@ -22,11 +22,11 @@ dependencies:
   idf:
     source:
       type: idf
-    version: 5.2.2
+    version: 5.4.1
 direct_dependencies:
 - espressif/esp_websocket_client
 - espressif/led_strip
 - idf
-manifest_hash: 0443b6bafd68112d12979152bf652c24696cf729c77e62c0779b3198c3fa18c2
-target: esp32c3
+manifest_hash: 8a18ea7b13ea42c731212fa6c114c3ce262cfe545297fb1d9c9a013678c3d938
+target: esp32c6
 version: 2.0.0
